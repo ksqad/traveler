@@ -180,9 +180,9 @@
 
 - [git rebase 的风险](http://git.oschina.net/progit/3-Git-%E5%88%86%E6%94%AF.html#3.6-%E5%88%86%E6%94%AF%E7%9A%84%E8%A1%8D%E5%90%88)
 
--[Pull Request的正确打开方式（如何在GitHub上贡献开源项目）](http://m.blog.csdn.net/article/details?id=17438153#10006-weixin-1-52626-6b3bffd01fdde4900130bc5a2751b6d1)
+- [Pull Request的正确打开方式（如何在GitHub上贡献开源项目）](http://m.blog.csdn.net/article/details?id=17438153#10006-weixin-1-52626-6b3bffd01fdde4900130bc5a2751b6d1)
 
--[关于 Pull Request 的十个建议](http://www.oschina.net/news/59961/pull-reques-ten-suggestion#10006-weixin-1-52626-6b3bffd01fdde4900130bc5a2751b6d1)
+- [关于 Pull Request 的十个建议](http://www.oschina.net/news/59961/pull-reques-ten-suggestion#10006-weixin-1-52626-6b3bffd01fdde4900130bc5a2751b6d1)
 
 - [Typing](https://typing.io/)
 
