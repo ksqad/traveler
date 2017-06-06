@@ -142,3 +142,15 @@
 示例 2，``[Edit] views: add create article api``。其中的 ``Edit`` 表示修改的是edit app 下的内容，``views`` 则表示修改的是 ``views.py``，``add create article api`` 则表示是添加了创建文章的api接口
 
 
+### 参考资料
+-----------
+
+- [django](https://www.djangoproject.com/)
+
+- [djangorestframework](http://www.django-rest-framework.org/)
+
+- [vue](https://cn.vuejs.org/)
+
+- [我如何使用 Django + Vue.js 快速构建项目](https://zhuanlan.zhihu.com/p/25080236)
+
+- [Django-REST-framework教程中文版](https://darkcooking.gitbooks.io/django-rest-framework-cn/content/)
