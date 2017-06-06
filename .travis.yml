@@ -17,7 +17,7 @@ install:
   - pip install coveralls
 
 before_script:
-  - mysql -e 'create database py_blog_db;' -u root
+  - mysql -e 'create database traveler;' -u root
 
 script:
   - python manage.py makemigrations
