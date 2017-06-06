@@ -115,7 +115,8 @@
 7. 运行Demo: python3 manage.py runserver
 
 
-## Workflow
+### Workflow
+-------------
 
 1. 获取上游最新代码：``git pull --rebase``
 2. 添加修改功能，**小步提交**，即实现某个小功能就本地小步提交一次。如：
@@ -154,3 +155,11 @@
 - [我如何使用 Django + Vue.js 快速构建项目](https://zhuanlan.zhihu.com/p/25080236)
 
 - [Django-REST-framework教程中文版](https://darkcooking.gitbooks.io/django-rest-framework-cn/content/)
+
+- [Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+
+- [Web前端人员专用单词书](https://www.shanbay.com/wordbook/129934/)
+
+- [JavaScript前端单词书](https://www.shanbay.com/wordbook/169468/)
+
+- [程序员必学电脑计算机专业英语词汇1700词](https://www.shanbay.com/wordbook/104791/)
