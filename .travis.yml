@@ -1,0 +1,31 @@
+language: python
+
+python:
+  - "3.6"
+  - "3.6-dev" # 3.6 development branch
+  - "3.7-dev" # 3.7 development branch
+  - "nightly" # currently points to 3.7-dev
+
+services:
+  - mysql
+
+env:
+  -DJANGO=1.10 DB=mysql
+
+install:
+  - pip install -r requirements.txt
+  - pip install coveralls
+
+before_script:
+  - mysql -e 'create database py_blog_db;' -u root
+
+script:
+  - python manage.py makemigrations
+  - python manage.py migrate
+  - coverage run --source=home manage.py test
+
+
+after_success:
+  - coveralls
+  - CODECLIMATE_REPO_TOKEN=<token> codeclimate-test-reporter
+
