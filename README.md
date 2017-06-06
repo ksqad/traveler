@@ -10,6 +10,8 @@
 
 - hello world
 
+- 使用 git
+
 - 学习该语言的语法
 
 - 实现一个TODO List
