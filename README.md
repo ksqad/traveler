@@ -5,6 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/travelgeezer/traveler/badges/gpa.svg)](https://codeclimate.com/github/travelgeezer/traveler)
 
 ### Daily tasks
+---------------
 
 - word : 30 minutes
 
@@ -18,7 +19,8 @@
 
 
 ### Todo List
--------------
+---------------
+- [heroku](https://devcenter.heroku.com/)
 
 - hello world
 
@@ -30,7 +32,7 @@
 
 - 熟记你所使用的IDE，编辑器的各种快捷建
 
-- 集成 Vue | React | Angular
+- 集成 Vue
 
 - 构建一个RESTfull服务
 
@@ -62,7 +64,7 @@
 
 - 用Toggle来管理应用的一些新特性
 
-- ～～尝试搭建CI环境～～
+- ~~尝试搭建CI环境~~
 
 - 尝试使用CI创建Build
 
@@ -110,18 +112,51 @@
 
 - python
 
-- django
+- flask
 
-- Django REST Framework
+- flask-sqlalchemy : ORM Framework
 
 - unittest: 单元测试框架
 
-##### setup
+- mysql: 数据库
+
+- Virtual Environments: 虚拟环境
+
+### install python3
+-------------------
+
+- [Installing Python 3 on Mac OS ](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/)
+
+- [Installing Python 3 on Linux](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/linux/)
+
+- [Installing Python 3 on Windows](http://docs.python-guide.org/en/latest/starting/install3/win/)
+
+- [Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+
+- [虚拟环境](http://pythonguidecn.readthedocs.io/zh/latest/dev/virtualenvs.html)
+
+- [mac更改pip源，没有.pip（即linux ubuntu python pip 换源方法教程](http://blog.csdn.net/xx1710/article/details/51893117)
+
+- [windows更改pip源](https://www.v2ex.com/t/291817)
+
+
+### install mysql
+-----------------
+
+- [Install MySQL on macOS Sierra](https://gist.github.com/nrollr/3f57fc15ded7dddddcc4e82fe137b58e)
+
+- [How To Install MySQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04)
+
+- [Install MySQL on Windows Using MySQL Installer](http://www.mysqltutorial.org/install-mysql/)
+
+### setup
+----------
 
 1. 安装 python3 version >= 3.6
 2. 安装 mysql
+1. 使用虚拟环境: [Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 3. 创建数据库: mysql -e 'create database traveler;' -u root
-4. 同步数据库: python3 manage.py makemigrations && python3 manage.py migrate
+4. 同步数据库: python3 manage.py db init && python3 manage.py db migrate && python3 manage.py db upgrade
 5. 安装依赖: pip3 install -r requirements.txt
 6. 运行测试: python3 manage.py test
 7. 运行Demo: python3 manage.py runserver
@@ -158,15 +193,25 @@
 ### 参考资料
 -----------
 
-- [django](https://www.djangoproject.com/)
+- [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 
-- [djangorestframework](http://www.django-rest-framework.org/)
+- [flask](http://docs.jinkan.org/docs/flask/)
+
+- [Flask-SQLAlchemy](http://www.pythondoc.com/flask-sqlalchemy/api.html#flask.ext.sqlalchemy.SQLAlchemy)
+
+- [awesome-flask](https://github.com/humiaozuzu/awesome-flask)
+
+- [Implementing a RESTful Web API with Python & Flask](http://blog.luisrei.com/articles/flaskrest.html)
+
+- [Flask by Example - Project Setup](https://realpython.com/blog/python/flask-by-example-part-1-project-setup/)
+
+- [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/)
+
+- [discover-flask](https://github.com/realpython/discover-flask)
+
+- [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
 
 - [vue](https://cn.vuejs.org/)
-
-- [我如何使用 Django + Vue.js 快速构建项目](https://zhuanlan.zhihu.com/p/25080236)
-
-- [Django-REST-framework教程中文版](https://darkcooking.gitbooks.io/django-rest-framework-cn/content/)
 
 - [phodal](https://www.phodal.com/)
 
