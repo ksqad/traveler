@@ -15,6 +15,7 @@ engines:
 ratings:
   paths:
   - "**.py"
+  - "src/*/**.py"
   - "static/css/**.css"
   - "static/js/**.js"
 exclude_paths:
