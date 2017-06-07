@@ -32,6 +32,7 @@ Markdown==2.6.8
 markdown2==2.3.4
 MarkupSafe==1.0
 mccabe==0.6.1
+mysql-connector-python-rf==2.2.2
 pbr==2.0.0
 pep8==1.7.0
 pycodestyle==2.3.1
