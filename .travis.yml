@@ -8,9 +8,7 @@ services:
   - mysql
 
 env:
-  - Flask=0.12.2
-  - DB=mysql
-  - APP_SETTINGS=config.DevelopmentConfig
+  - Flask=0.12.2 DB=mysql APP_SETTINGS=config.DevelopmentConfig
 
 install:
   - pip install -r requirements.txt
