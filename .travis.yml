@@ -8,15 +8,15 @@ services:
   - mysql
 
 env:
-  -Flask=0.12.2 DB=mysql
+  - Flask=0.12.2
+  - DB=mysql
+  - APP_SETTINGS=config.DevelopmentConfig
 
 install:
   - pip install -r requirements.txt
   - pip install coveralls
-  - echo "source `which activate.sh`" >> ~/.bashrc
 
 before_script:
-
   - mysql -e 'create database traveler;' -u root
 
 script:
