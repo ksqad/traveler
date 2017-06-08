@@ -1,7 +1,6 @@
 language: python
 
 python:
-  - "3.5"
   - "3.6"
 
 services:
@@ -12,6 +11,7 @@ env:
 
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
 
 before_script:
   - mysql -e 'create database traveler;' -u root
@@ -20,13 +20,9 @@ script:
   - python manage.py db init
   - python manage.py db migrate
   - python manage.py db upgrade
-  - python manage.py test
-  - coverage run manage.py cov
-
-
+  - python manage.py cov
+  - coverage run --source=src manage.py test
 
 after_success:
   - coveralls
-  - CODECLIMATE_REPO_TOKEN=<mOHvKgkDZREIrVncN7fk91qXTSspNdLQ6> codeclimate-test-reporter
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
