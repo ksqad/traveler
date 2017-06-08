@@ -128,6 +128,7 @@
 3. 安装PyCharm IDE([install pycharm](https://www.jetbrains.com/pycharm/))
 4. 配置PyCharm [config](#user-content-install-pycharm-)
 5. 安装依赖: pip3 install -r requirements.txt
+6. 配置命令行运行环境: [config](#user-content-command-line-development-environment-)
 6. 同步数据库: python3 manage.py db init && python3 manage.py db migrate && python3 manage.py db upgrade
 7. 运行测试: python3 manage.py test
 8. 运行Demo: 运行项目
@@ -207,11 +208,29 @@
 - [Install MySQL on Windows Using MySQL Installer](http://www.mysqltutorial.org/install-mysql/)
 
 
-### install PyCharm <span id = "config-pycharm"></span>
+### config PyCharm <span id = "config-pycharm"></span>
   
   1. 查看 [Creating and Editing Run/Debug Configurations](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html#createExplicitly)
   2. 配置 ![edit-configurations](pycharm-edit-configurations.jpeg)
   3. 使用virtualenv [PyCharm创建virtualenv方法](https://my.oschina.net/jhao104/blog/787551)
+
+### The configuration command line development environment <span id = "command-line-development-environment"></span>
+
+>   关于 KeyError: 'APP_SETTINGS'：
+>   在PyCharm中通过配置Editing configurations file 已经配置过了 APP_SETTINGS 环境变量
+>   但是在命令行中使用时又会找不到
+>   所以需要配置一下在命令行使用 APP_SETTINGS 的环境变量，
+>   [具体原因参见](http://docs.jinkan.org/docs/flask/config.html)
+
+##### autoenv
+
+- 当你 cd 进入一个包含 .env 的目录中，就会 autoenv 自动激活那个环境。
+    
+- 配置环境变量
+ 
+>   [参见-Local Settings](https://realpython.com/blog/python/flask-by-example-part-1-project-setup/#Local.Settings)   
+>   create .env file
+
 
 ### 参考资料
 -----------
