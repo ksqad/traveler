@@ -125,10 +125,10 @@
 ### setup
 ----------
 
-1. 安装python3(<a herf="#install-python3">install python3</a>)
-2. 安装mysql(<a herf="#install-mysql">install mysql</a>)
+1. 安装python3 [install](#install-python3)
+2. 安装mysql [install](#install-mysql)
 3. 安装PyCharm IDE([install pycharm](https://www.jetbrains.com/pycharm/))
-4. 配置PyCharm(<a herf="#config-pycharm">config pycharm</a>)
+4. 配置PyCharm [install](#config-pycharm)
 5. 安装依赖: pip3 install -r requirements.txt
 6. 同步数据库: python3 manage.py db init && python3 manage.py db migrate && python3 manage.py db upgrade
 7. 运行测试: python3 manage.py test
@@ -164,7 +164,7 @@
 
 
 
-### install python3 <a name="install-python3" />
+### install python3 <span id = "install-python3"></span>
 -------------------
 
 - [Installing Python 3 on Mac OS ](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/)
@@ -182,7 +182,7 @@
 - [windows更改pip源](https://www.v2ex.com/t/291817)
 
 
-### install mysql <a name="install-mysql" />
+### install mysql <span id = "install-mysql"></span>
 -----------------
 
 - [Install MySQL on macOS Sierra](https://gist.github.com/nrollr/3f57fc15ded7dddddcc4e82fe137b58e)
@@ -192,7 +192,7 @@
 - [Install MySQL on Windows Using MySQL Installer](http://www.mysqltutorial.org/install-mysql/)
 
 
-### install PyCharm <a name="config-pycharm" />
+### install PyCharm <span id = "config-pycharm"></span>
   
   1. 查看 [Creating and Editing Run/Debug Configurations](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html#createExplicitly)
   2. 配置 ![edit-configurations](pycharm-edit-configurations.jpeg)
