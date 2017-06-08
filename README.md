@@ -122,44 +122,17 @@
 
 - Virtual Environments: 虚拟环境
 
-### install python3
--------------------
-
-- [Installing Python 3 on Mac OS ](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/)
-
-- [Installing Python 3 on Linux](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/linux/)
-
-- [Installing Python 3 on Windows](http://docs.python-guide.org/en/latest/starting/install3/win/)
-
-- [Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
-
-- [虚拟环境](http://pythonguidecn.readthedocs.io/zh/latest/dev/virtualenvs.html)
-
-- [mac更改pip源，没有.pip（即linux ubuntu python pip 换源方法教程](http://blog.csdn.net/xx1710/article/details/51893117)
-
-- [windows更改pip源](https://www.v2ex.com/t/291817)
-
-
-### install mysql
------------------
-
-- [Install MySQL on macOS Sierra](https://gist.github.com/nrollr/3f57fc15ded7dddddcc4e82fe137b58e)
-
-- [How To Install MySQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04)
-
-- [Install MySQL on Windows Using MySQL Installer](http://www.mysqltutorial.org/install-mysql/)
-
 ### setup
 ----------
 
-1. 安装 python3 version >= 3.6
-2. 安装 mysql
-1. 使用虚拟环境: [Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
-3. 创建数据库: mysql -e 'create database traveler;' -u root -p
-4. 安装依赖: pip3 install -r requirements.txt
-5. 同步数据库: python3 manage.py db init && python3 manage.py db migrate && python3 manage.py db upgrade
-6. 运行测试: python3 manage.py test
-7. 运行Demo: python3 manage.py runserver
+1. 安装python3(<a herf="#install-python3">install python3</a>)
+2. 安装mysql(<a herf="#install-mysql">install mysql</a>)
+3. 安装PyCharm IDE([install pycharm](https://www.jetbrains.com/pycharm/))
+4. 配置PyCharm(<a herf="#config-pycharm">config pycharm</a>)
+5. 安装依赖: pip3 install -r requirements.txt
+6. 同步数据库: python3 manage.py db init && python3 manage.py db migrate && python3 manage.py db upgrade
+7. 运行测试: python3 manage.py test
+8. 运行Demo: 运行项目
 
 
 ### Workflow
@@ -189,6 +162,41 @@
 
 示例 2，``[Edit] views: add create article api``。其中的 ``Edit`` 表示修改的是edit app 下的内容，``views`` 则表示修改的是 ``views.py``，``add create article api`` 则表示是添加了创建文章的api接口
 
+
+
+### install python3 <a name="install-python3" />
+-------------------
+
+- [Installing Python 3 on Mac OS ](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/osx/)
+
+- [Installing Python 3 on Linux](http://python-guide-pt-br.readthedocs.io/en/latest/starting/install3/linux/)
+
+- [Installing Python 3 on Windows](http://docs.python-guide.org/en/latest/starting/install3/win/)
+
+- [Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+
+- [虚拟环境](http://pythonguidecn.readthedocs.io/zh/latest/dev/virtualenvs.html)
+
+- [mac更改pip源，没有.pip（即linux ubuntu python pip 换源方法教程](http://blog.csdn.net/xx1710/article/details/51893117)
+
+- [windows更改pip源](https://www.v2ex.com/t/291817)
+
+
+### install mysql <a name="install-mysql" />
+-----------------
+
+- [Install MySQL on macOS Sierra](https://gist.github.com/nrollr/3f57fc15ded7dddddcc4e82fe137b58e)
+
+- [How To Install MySQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04)
+
+- [Install MySQL on Windows Using MySQL Installer](http://www.mysqltutorial.org/install-mysql/)
+
+
+### install PyCharm <a name="config-pycharm" />
+  
+  1. 查看 [Creating and Editing Run/Debug Configurations](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html#createExplicitly)
+  2. 配置 ![edit-configurations](pycharm-edit-configurations.jpeg)
+  3. 使用virtualenv [PyCharm创建virtualenv方法](https://my.oschina.net/jhao104/blog/787551)
 
 ### 参考资料
 -----------
