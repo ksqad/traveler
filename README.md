@@ -125,10 +125,10 @@
 ### setup
 ----------
 
-1. 安装python3 [install](#install-python3)
-2. 安装mysql [install](#install-mysql)
+1. 安装python3 [install](#user-content-install-python3-)
+2. 安装mysql [install](#user-content-install-mysql-)
 3. 安装PyCharm IDE([install pycharm](https://www.jetbrains.com/pycharm/))
-4. 配置PyCharm [install](#config-pycharm)
+4. 配置PyCharm [install](#user-content-install-pycharm-)
 5. 安装依赖: pip3 install -r requirements.txt
 6. 同步数据库: python3 manage.py db init && python3 manage.py db migrate && python3 manage.py db upgrade
 7. 运行测试: python3 manage.py test
