@@ -148,6 +148,23 @@
 5. 来一个 Pull Request
 
 
+##### frok 的分支与远程主分支同步
+
+   1. 首先要确认一下是否建立里主repo的远程源。
+    
+    git remote -v
+
+   2. 如果里面只能看到你自己的两个源(fetch 和 push), 那就需要添加主 repo的源：
+   
+    git remote add upstream URL
+	git remote -v
+	然后你就能看到upstream了
+	
+   3. 如果想与主repo合并：
+   
+    git fetch upstream
+    git merge upstream/master
+		
 ### 提交信息规范
 
 建议提交信息按如下规范：
