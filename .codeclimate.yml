@@ -1,22 +1,19 @@
 engines:
   pep8:
     enabled: true
-  eslint:
-    enabled: true
   csslint:
     enabled: true
   duplication:
   	enabled: true
     config:
     	languages:
-      - python
-      	#mass_threshold: 30
-      - javascript
+        - python
+        - javascript
 ratings:
   paths:
   - "**.py"
   - "src/*/**.py"
-  - "static/css/**.css"
-  - "static/js/**.js"
+  - "src/*/**.css"
+  - "src/*/**.js"
 exclude_paths:
   - "__test__"
