@@ -1,11 +1,12 @@
+[paths]
+source = src
+
 [run]
-omit =
-    */tests*
+branch = True
+source = src
+parallel = true
 
 [report]
-exclude_lines =
-    pragma: no cover
-    def __repr__
-    raise NotImplementedError
-    if __name__ == .__main__.:
-    def parse_args
+show_missing = true
+precision = 2
+omit = *migrations*
