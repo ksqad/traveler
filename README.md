@@ -155,9 +155,9 @@
 1. 安装 python3 version >= 3.6
 2. 安装 mysql
 1. 使用虚拟环境: [Virtual Environments](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
-3. 创建数据库: mysql -e 'create database traveler;' -u root
-4. 同步数据库: python3 manage.py db init && python3 manage.py db migrate && python3 manage.py db upgrade
-5. 安装依赖: pip3 install -r requirements.txt
+3. 创建数据库: mysql -e 'create database traveler;' -u root -p
+4. 安装依赖: pip3 install -r requirements.txt && echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
+5. 同步数据库: python3 manage.py db init && python3 manage.py db migrate && python3 manage.py db upgrade
 6. 运行测试: python3 manage.py test
 7. 运行Demo: python3 manage.py runserver
 
