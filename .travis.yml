@@ -20,8 +20,8 @@ script:
   - python manage.py db init
   - python manage.py db migrate
   - python manage.py db upgrade
-  - python manage.py test
   - coverage run manage.py cov
+  - coverage run --source=src manage.py test
 
 
 after_success:
