@@ -42,18 +42,15 @@
           },
             methods:{
               addTask: function () {
-                  console.log('22');
                   axios.post('/todo/api/addTask',
                       {
                           title: app.newTasks.title,
                           description: app.newTasks.description
                       })
                       .then(function (response) {
-                          console.log(response);
                           app.tasks = response.data.tasks;
                       })
                       .catch(function (error) {
-                          console.log(error);
                       });
 
               },
@@ -61,11 +58,9 @@
                   axios.post('/todo/api/deleteTask',
                       {id: task_id})
                       .then(function (response){
-                          console.log(response);
                           app.tasks=response.data.tasks;
                       })
                       .catch(function (error){
-                          console.log(error);
                       });
               }
             }
@@ -75,11 +70,9 @@
 
         axios.get('/todo/api/tasks')
           .then(function (response) {
-            console.log(response);
             app.tasks = response.data.tasks;
           })
           .catch(function (error) {
-            console.log(error);
           });
     </script>
 </html>
