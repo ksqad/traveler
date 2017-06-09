@@ -1,0 +1,8 @@
+#app {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.todo {
+    border-bottom: 1px solid darkgrey;
+}
