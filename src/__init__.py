@@ -11,6 +11,8 @@ import src.views
 from src.home.views import home_blueprint
 from src.todo_list.views import todo_list_blueprint
 
+import src.models
+
 # register our blueprints
 app.register_blueprint(home_blueprint)
 app.register_blueprint(todo_list_blueprint)
