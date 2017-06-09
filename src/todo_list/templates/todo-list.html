@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="../../static/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div id="app">
+         <div v-for="task in tasks">
+            <div>
+                <h3 v-text="task.title"></h3>
+                <p v-text="task.description"></p>
+                <input type="checkbox" v-model="task.done"/>
+                <span v-text="task.done"></span>
+                <button :id="task.id" @click="delTask(task.id )">del</button>
+            </div>
+         </div>
+        <div>
+            <h3>add todo</h3>
+            <input v-model="newTasks.title" >
+            <input v-model="newTasks.description">
+            <button @click=addTask($event)>add</button>
+        </div>
+    </div>
+</body>
+    <script>
+        var app = new Vue({
+          el: '#app',
+          data: {
+              tasks: 'Hello Vue!',
+              newTasks: {
+                  title:'',
+                  description:''
+              }
+          },
+            methods:{
+              addTask: function () {
+                  console.log('22');
+                  axios.post('/todo/api/addTask',
+                      {
+                          title: app.newTasks.title,
+                          description: app.newTasks.description
+                      })
+                      .then(function (response) {
+                          console.log(response);
+                          app.tasks = response.data.tasks;
+                      })
+                      .catch(function (error) {
+                          console.log(error);
+                      });
+
+              },
+              delTask: function (task_id) {
+                  axios.post('/todo/api/deleteTask',
+                      {id: task_id})
+                      .then(function (response){
+                          console.log(response);
+                          app.tasks=response.data.tasks;
+                      })
+                      .catch(function (error){
+                          console.log(error);
+                      });
+              }
+            }
+
+
+        });
+
+        axios.get('/todo/api/tasks')
+          .then(function (response) {
+            console.log(response);
+            app.tasks = response.data.tasks;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    </script>
+</html>
