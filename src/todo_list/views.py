@@ -22,6 +22,10 @@ todo_list_blueprint = Blueprint(
 )
 
 
+@todo_list_blueprint.route('/todo-list')
+def todo_list():
+    return render_template('todo-list.html')
+
 
 @todo_list_blueprint.route('/todo/api/tasks', methods=['GET'])
 def getTasks():
